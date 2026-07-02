@@ -8,30 +8,30 @@ body {
 
 @layer base {
   :root {
-    --background-transparent: #d2c6ad00;
-    --background: #d2c6ad;
+    --background-transparent: #e8e6dc00;
+    --background: #e8e6dc;
     --foreground: #0f0f0e;
 
-    --card: #d2c6ad;
+    --card: #e8e6dc;
     --card-foreground: #0f0f0e;
 
-    --popover: #d2c6ad;
+    --popover: #e8e6dc;
     --popover-foreground: #0f0f0e;
 
     --primary: #0f0f0e;
     --primary-hover: #3d3d3a;
     --primary-foreground: #e8e6dc;
 
-    --secondary: #e8e6dc;
+    --secondary: #d2c6ad;
     --secondary-foreground: #0f0f0e;
 
     --destructive: #ef4444;
-    --destructive-foreground: #e8e6dc;
+    --destructive-foreground: #0f0f0e;
 
-    --muted: #e8e6dc;
+    --muted: #d2c6ad;
     --muted-foreground: #7a7268;
 
-    --accent: #e8e6dc;
+    --accent: #d2c6ad;
     --accent-foreground: #0f0f0e;
 
     --border: #0f0f0e;
