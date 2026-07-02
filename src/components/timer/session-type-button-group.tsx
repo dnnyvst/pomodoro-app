@@ -11,9 +11,9 @@ type Session = {
 };
 
 const sessions: Session[] = [
-  { id: 1, text: "Pomodoro", defaultMinutes: "25" },
-  { id: 2, text: "Short Break", defaultMinutes: "05" },
-  { id: 3, text: "Long Break", defaultMinutes: "15" },
+  { id: 1, text: "pomodoro", defaultMinutes: "25" },
+  { id: 2, text: "short break", defaultMinutes: "05" },
+  { id: 3, text: "long break", defaultMinutes: "15" },
 ];
 
 const SessionTypeButtonGroup = () => {

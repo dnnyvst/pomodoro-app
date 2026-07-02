@@ -21,14 +21,14 @@ const SettingsDialogButton = () => {
         <DialogTrigger asChild>
           <Button variant="ghost" className="transition-colors duration-300">
             <Settings />
-            <span className="sr-only">Settings</span>
+            <span className="sr-only">settings</span>
           </Button>
         </DialogTrigger>
         <DialogContent className="sm:max-w-[425px]">
           <DialogHeader>
-            <DialogTitle>Settings</DialogTitle>
+            <DialogTitle>settings</DialogTitle>
             <DialogDescription className="italic">
-              Coming soon!
+              coming soon!
             </DialogDescription>
           </DialogHeader>
           <div className="flex flex-col gap-2">
@@ -38,7 +38,7 @@ const SettingsDialogButton = () => {
                 className="opacity-40"
                 aria-disabled
               >
-                Sound effects
+                sound effects
               </Label>
               <Switch id="sound-effects" checked disabled />
             </div>
@@ -48,7 +48,7 @@ const SettingsDialogButton = () => {
                 className="opacity-40"
                 aria-disabled
               >
-                Auto Start Break
+                auto start break
               </Label>
               <Switch id="auto-start-break" disabled />
             </div>
@@ -58,14 +58,14 @@ const SettingsDialogButton = () => {
                 className="opacity-40"
                 aria-disabled
               >
-                Auto Start Focus
+                auto start focus
               </Label>
               <Switch id="auto-start-focus" disabled />
             </div>
           </div>
           <DialogFooter>
             <Button type="submit" disabled>
-              Done
+              done
             </Button>
           </DialogFooter>
         </DialogContent>

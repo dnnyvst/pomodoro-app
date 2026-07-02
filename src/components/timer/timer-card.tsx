@@ -48,7 +48,7 @@ const TimerCard = () => {
       if (seconds === "-1") {
         setSeconds("59");
         setMinutes((minutes) =>
-          getFormattedNumberString(`${parseInt(minutes) - 1}`)
+          getFormattedNumberString(`${parseInt(minutes) - 1}`),
         );
       }
       document.title = `${minutes}:${seconds}`;
@@ -60,10 +60,10 @@ const TimerCard = () => {
       activeSessionTypeId === 1
         ? "25"
         : activeSessionTypeId === 2
-        ? "05"
-        : activeSessionTypeId === 3
-        ? "15"
-        : "00"
+          ? "05"
+          : activeSessionTypeId === 3
+            ? "15"
+            : "00",
     );
     setSeconds("00");
   }, [activeSessionTypeId]);
@@ -114,7 +114,7 @@ const TimerCard = () => {
         updateCompletedPomodorosAndTimer();
       } else {
         setSeconds((seconds) =>
-          getFormattedNumberString(`${parseInt(seconds) - 1}`)
+          getFormattedNumberString(`${parseInt(seconds) - 1}`),
         );
       }
     }, 1000);
@@ -154,7 +154,9 @@ const TimerCard = () => {
             onChange={(e) => setMinutes(e.target.value)}
             onBlur={() =>
               setMinutes((minutes) =>
-                getFormattedNumberString(+minutes > 60 ? "60" : minutes || "00")
+                getFormattedNumberString(
+                  +minutes > 60 ? "60" : minutes || "00",
+                ),
               )
             }
             disabled={running}
@@ -169,8 +171,8 @@ const TimerCard = () => {
             onBlur={() =>
               setSeconds((seconds) =>
                 getFormattedNumberString(
-                  (+seconds > 59 ? "59" : seconds) || "00"
-                )
+                  (+seconds > 59 ? "59" : seconds) || "00",
+                ),
               )
             }
             disabled={running}
@@ -206,7 +208,7 @@ const TimerCard = () => {
             className="visible"
             style={{ width: playPauseButtonWidth }}
           >
-            {running ? "Pause" : "Start"}
+            {running ? "pause" : "start"}
           </Button>
         </BreakReminderDialog>
       </CardFooter>

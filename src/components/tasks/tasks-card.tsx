@@ -51,13 +51,13 @@ const TasksCard = () => {
 
   const setStatus = (id: number, status: string) => {
     setTasks((tasks) =>
-      tasks.map((task) => (task.id === id ? { ...task, status } : task))
+      tasks.map((task) => (task.id === id ? { ...task, status } : task)),
     );
   };
 
   const setText = (id: number, text: string) => {
     setTasks((tasks) =>
-      tasks.map((task) => (task.id === id ? { ...task, text } : task))
+      tasks.map((task) => (task.id === id ? { ...task, text } : task)),
     );
   };
 
@@ -73,21 +73,21 @@ const TasksCard = () => {
       } ${onBreak && "bg-transparent"}`}
     >
       <CardHeader>
-        <CardTitle>Tasks</CardTitle>
+        <CardTitle>tasks</CardTitle>
         <CardDescription
           className={`sm:hidden transition-colors duration-300 ${
             running && "text-transparent"
           }`}
         >
-          <p>Touch and hold to drag/reorder</p>
-          <p>Swipe left to edit/delete</p>
+          <p>touch and hold to drag/reorder</p>
+          <p>swipe left to edit/delete</p>
         </CardDescription>
         <CardDescription
           className={`hidden sm:block transition-colors duration-300 ${
             running && "text-transparent"
           }`}
         >
-          Click and drag to reoder
+          click and drag to reoder
         </CardDescription>
       </CardHeader>
       <CardContent className="flex flex-col gap-y-2">
@@ -115,7 +115,7 @@ const TasksCard = () => {
             className={`placeholder:italic border-dashed py-2 text-center transition-opacity duration-300 ${
               running && "!opacity-0"
             }`}
-            placeholder="Type here to add task"
+            placeholder="type here to add task"
             onChange={(e) => setNewTaskText(e.target.value)}
             onKeyDown={(e) => {
               if (e.key === "Enter" && !!newTaskText.trim()) {
